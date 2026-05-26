@@ -152,3 +152,43 @@
     justify-content: flex-end;
   }
 }
+.edit-btn {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #d68910;
+}
+
+.save-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background-color: #2874a6;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.edit-input:focus {
+  border-color: #3498db;
+}
