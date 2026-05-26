@@ -32,6 +32,7 @@ This application allows users to:
 
 ## Project Structure
 
+```bash
 src/
  ├── components/
  │    ├── Header.jsx
@@ -42,7 +43,7 @@ src/
  ├── App.css
  ├── index.css
  └── main.jsx
-
+```
 
 ---
 
@@ -50,27 +51,27 @@ src/
 
 ### 1. Clone the repository
 
-
+```bash
 git clone https://github.com/rish-cute/todo-app.git
-
+```
 
 ### 2. Open the project folder
 
-
+```bash
 cd todo-app
-
+```
 
 ### 3. Install dependencies
 
-
+```bash
 npm install
-
+```
 
 ### 4. Start development server
 
-
+```bash
 npm run dev
-
+```
 
 ### 5. Open the local server link shown in terminal
 
