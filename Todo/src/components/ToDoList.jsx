@@ -1,3 +1,4 @@
+// Component for displaying all todo items
 import ToDoItem from "./ToDoItem";
 
 function ToDoList({

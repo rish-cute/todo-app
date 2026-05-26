@@ -1,3 +1,4 @@
+// Importing React hook and components
 import { useState } from "react";
 
 import Header from "./components/Header";

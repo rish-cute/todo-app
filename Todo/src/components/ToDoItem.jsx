@@ -1,3 +1,4 @@
+// Component for displaying single todo item
 function ToDoItem({
   item,
   editId,
