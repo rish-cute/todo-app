@@ -1,0 +1,65 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.todo-card {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #777;
+  font-size: 14px;
+}
+
+.todo-input-section {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.todo-input:focus {
+  border-color: #4a90e2;
+}
+
+.add-btn {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #357abd;
+}
