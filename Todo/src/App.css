@@ -9,11 +9,11 @@
 
 .todo-card {
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
   background-color: white;
   padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -24,23 +24,25 @@
 .header h1 {
   color: #333;
   margin-bottom: 10px;
+  font-size: 32px;
 }
 
 .header p {
   color: #777;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .todo-input-section {
   display: flex;
   gap: 10px;
+  margin-bottom: 25px;
 }
 
 .todo-input {
   flex: 1;
   padding: 12px;
   border: 2px solid #dcdcdc;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
   outline: none;
 }
@@ -54,7 +56,7 @@
   color: white;
   border: none;
   padding: 12px 18px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 15px;
   transition: 0.3s;
@@ -62,4 +64,91 @@
 
 .add-btn:hover {
   background-color: #357abd;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-item {
+  background-color: #f9fafc;
+  border: 1px solid #e5e5e5;
+  padding: 15px;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.task-item p {
+  font-size: 16px;
+  color: #333;
+  word-break: break-word;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.complete-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.complete-btn:hover {
+  background-color: #1f8a4c;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+
+  .todo-input-section {
+    flex-direction: column;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .task-buttons {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
